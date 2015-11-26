@@ -1,0 +1,17 @@
+
+@mixin box($width, $height) {
+        height: $height;
+
+      img {
+        width:$width;
+        height:$height;
+      }
+
+      .img-desc {
+        box-sizing: border-box;
+      }
+
+      &:hover .img-desc {
+      }
+
+}
