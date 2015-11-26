@@ -1,0 +1,27 @@
+@import "mixins/nav_but_colors";
+@import "mixins/nav_but_text";
+@import "vars";
+
+.main_nav {
+  @include menu_color;
+  height: 70px;
+  border-bottom: 1px solid $border_color_light;
+  overflow: hidden;
+
+  li {
+    list-style: none;
+    /*border-right: 1px solid #eaeaea;*/
+  } /*li*/
+
+  .nav_but {
+    @include but_text;
+    display: block;
+    height: 20px;               /* total height: 70px */
+    padding: 25px 30px;
+
+    &:hover { cursor: pointer; }
+    &.dark { @include dark_colors; }
+    &.light { @include light_colors; }
+  }
+
+}/*.main_nav*/
