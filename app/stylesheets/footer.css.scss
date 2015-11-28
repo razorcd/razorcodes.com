@@ -1,0 +1,9 @@
+@import "mixins/nav_but_colors";
+
+footer {
+  display: block;
+  @include menu_color;
+  width: 100%;
+  height: 100px;
+  text-align:center;
+}

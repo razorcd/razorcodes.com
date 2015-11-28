@@ -39,6 +39,7 @@ $section_bg_2: #d5d7dd;
     // top: 500%;
   }
   .window:nth-child(7) {
+    height: calc(100% - 100px);
     background: $section_bg_1;
     // top: 600%;
   }
