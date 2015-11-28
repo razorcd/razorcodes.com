@@ -1,0 +1,161 @@
+/*LOADS FIRST after application.css.scss*/
+@import "vars";
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  // src:url('OpenSans-Regular.ttf');
+  src:
+    // url('icomoon.eot?#iefix') format('embedded-opentype'),
+    // url('icomoon.svg#icomoon') format('svg'),
+    // url('icomoon.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans-Light';
+}
+
+h1 {
+  font-weight: normal;
+  margin: 20px 30px 10px 60px;
+  font-size: 5em;
+  color: $h1_color;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 20px 30px 10px 60px;
+  font-size: 3em;
+  color: $h1_color;
+}
+
+.clear{
+  clear:both;
+  height:30px;
+}
+
+
+
+.box {
+    display: inline-block;
+    margin-top:15px;
+    margin-left:15px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #aaa;
+    font-weight: bold;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+
+  img {
+  }
+
+  .img-desc {
+    text-align: left;  //justify
+    // text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 8px 12px 26px 12px;
+    background-color: inherit;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .desc-anim {
+    bottom: -60px;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+  &:hover .desc-anim {
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+  .details {
+    text-align: left;
+    position: absolute;
+    right:0;
+    top:0;
+    background-color: inherit;
+    padding: 10px;
+    margin: 10px;
+  }
+
+ }
+
+
+.block { display: block; }
+.left { float: left; }
+.right { float: right; }
+.border_left { border-left: 1px solid $border_color_light}
+.border_right { border-right: 1px solid $border_color_light}
+
+
+.collection {
+  // background-color: grey;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 15px;
+}
+
+
+// @media all and (min-width: 786px) and (max-width: 1210px){
+//   .collection{
+//     max-width: 786px;
+//   }
+// }
+
+.text-center {
+  text-align: center;
+}
+  .text-left {
+  text-align: left;
+}
+  .text-right {
+  text-align: right;
+}
+
+
+.link-to-button {
+  border:1px solid #aaa;
+  color: #000;
+  font-size: 10pt;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+
+  &:hover{
+    border: 1px solid #000;
+    cursor: normal;
+  }
+}
+
+.button-bg{
+  background: #fcfcfc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fcfcfc 0%, #e0e0e0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #fcfcfc 0%,#e0e0e0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+}
+
+.validation-message {
+  text-align: center;
+  color: #FF0000;
+}
+
+.success-message, .error-message {
+  padding: 5px 30px;
+  color: #eee;
+  font-weight: bold;
+}
+.success-message { background-color: #06BC3A; }
+.error-message { background-color: #E10009; }
