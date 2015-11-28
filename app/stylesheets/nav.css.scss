@@ -5,7 +5,7 @@
 .main_nav {
   @include menu_color;
   height: 70px;
-  border-bottom: 4px solid $border_color_light;
+  border-bottom: 1px solid $border_color_light;
   overflow: hidden;
 
   li {

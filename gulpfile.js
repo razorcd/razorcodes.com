@@ -11,6 +11,10 @@ var gulp = require('gulp'),
     open = require('gulp-open');
     // sourcemaps = require('gulp-sourcemaps');
 
+var streamErrorHandler = function(e){
+  console.log(e);
+  this.emit('end');
+}
 
 gulp.task('clean', function () {
   return gulp.src('dist', {read: false})
@@ -38,6 +42,7 @@ gulp.task('build_index', ['build_css'], function () {
              .pipe(gulp.dest('dist'))
              .pipe(inject(sources, {relative: true}))
              .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
+             .on('error', streamErrorHandler)
              .pipe(gulp.dest('dist'))
              .pipe(livereload());
 });
@@ -45,14 +50,13 @@ gulp.task('build_index', ['build_css'], function () {
 
 gulp.task("watch", ['build'], function(){
   livereload.listen({ basePath: 'dist' });
-  gulp.watch('app/**/*', ['build']);
+  gulp.watch('app/**/*', ['build'], function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });
 })
 
 
-gulp.task('open_uri', ['server'], function(){
-  gulp.src(__filename)
-  .pipe(open({uri: 'http://localhost:8080', livereload: true}));
-});
+
 
 
 gulp.task('server', ['build'], function(done) {
@@ -60,6 +64,12 @@ gulp.task('server', ['build'], function(done) {
     st({ path: __dirname + '/dist', index: 'index.html', cache: false })
   ).listen(8080, done);
 });
+
+gulp.task('open_uri', ['server'], function(){
+  gulp.src(__filename)
+  .pipe(open({uri: 'http://localhost:8080'}));
+});
+
 
 
 gulp.task("build", ['clean', 'build_css', 'build_index']);
