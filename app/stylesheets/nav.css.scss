@@ -2,7 +2,14 @@
 @import "mixins/nav_but_text";
 @import "vars";
 
-.main_nav {
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.main-nav {
   @include menu_color;
   height: 70px;
   border-bottom: 1px solid $border_color_light;
@@ -11,12 +18,12 @@
   li {
     list-style: none;
     /*border-right: 1px solid #eaeaea;*/
-  } /*li*/
+  }
 
-  .nav_but {
+  .nav-but {
     @include but_text;
     display: block;
-    height: 20px;               /* total height: 70px */
+    height: 70px;               /* total height: 70px */
     padding: 25px 30px;
 
     &:hover { cursor: pointer; }
@@ -24,6 +31,6 @@
     &.light { @include light_colors; }
   }
 
-}/*.main_nav*/
+}/*.main-nav*/
 
 

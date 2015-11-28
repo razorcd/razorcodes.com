@@ -1,9 +1,7 @@
-/*LOADS FIRST after application.css.scss*/
 @import "vars";
 
 @font-face {
   font-family: 'OpenSans-Light';
-  // src:url('OpenSans-Regular.ttf');
   src:
     // url('icomoon.eot?#iefix') format('embedded-opentype'),
     // url('icomoon.svg#icomoon') format('svg'),
@@ -11,6 +9,10 @@
     url('../fonts/OpenSans-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+html, body {
+  height: 100%;
 }
 
 html, body, ul {
@@ -35,7 +37,6 @@ h2 {
 
 .clear{
   clear:both;
-  height:30px;
 }
 
 
@@ -93,16 +94,8 @@ h2 {
 .block { display: block; }
 .left { float: left; }
 .right { float: right; }
-.border_left { border-left: 1px solid $border_color_light}
-.border_right { border-right: 1px solid $border_color_light}
-
-
-.collection {
-  // background-color: grey;
-  margin: 0 auto;
-  text-align: center;
-  padding-right: 15px;
-}
+.border-left { border-left: 1px solid $border_color_light}
+.border-right { border-right: 1px solid $border_color_light}
 
 
 // @media all and (min-width: 786px) and (max-width: 1210px){
@@ -114,48 +107,10 @@ h2 {
 .text-center {
   text-align: center;
 }
-  .text-left {
+.text-left {
   text-align: left;
 }
-  .text-right {
+.text-right {
   text-align: right;
 }
 
-
-.link-to-button {
-  border:1px solid #aaa;
-  color: #000;
-  font-size: 10pt;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-
-  &:hover{
-    border: 1px solid #000;
-    cursor: normal;
-  }
-}
-
-.button-bg{
-  background: #fcfcfc; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fcfcfc 0%, #e0e0e0 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #fcfcfc 0%,#e0e0e0 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #fcfcfc 0%,#e0e0e0 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
-}
-
-.validation-message {
-  text-align: center;
-  color: #FF0000;
-}
-
-.success-message, .error-message {
-  padding: 5px 30px;
-  color: #eee;
-  font-weight: bold;
-}
-.success-message { background-color: #06BC3A; }
-.error-message { background-color: #E10009; }
