@@ -48,6 +48,12 @@ gulp.task('build_index', ['build_css'], function () {
 });
 
 
+gulp.task('move_other_files', ['clean'], function(){
+  return gulp.src(['app/+(fonts)/**/*'])
+             .pipe(gulp.dest('dist'));
+})
+
+
 gulp.task("watch", ['build'], function(){
   livereload.listen({ basePath: 'dist' });
   gulp.watch('app/**/*', ['build'], function(event) {
@@ -72,7 +78,7 @@ gulp.task('open_uri', ['server'], function(){
 
 
 
-gulp.task("build", ['clean', 'build_css', 'build_index']);
+gulp.task("build", ['clean', 'build_css', 'build_index', 'move_other_files']);
 gulp.task("serv", ['build', 'watch', 'server', 'open_uri']);
 
 gulp.task('default', ['serv']);
