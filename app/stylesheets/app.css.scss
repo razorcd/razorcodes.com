@@ -50,12 +50,12 @@ h2 {
 .collection {
   text-align: center;
   width: 100%;
-  max-height: 100%;
 }
 
+.realtimeboxsize{width: 30%; }
+.webappboxsize{width: 30%; }
+
 .box {
-  width: 20%;
-  max-height: 35%;
   display: inline-block;
   overflow: hidden;
   margin: 15px;
@@ -101,6 +101,15 @@ h2 {
     background-color: inherit;
     padding: 10px;
     margin: 10px;
+  }
+
+  .details-anim {
+    top: -60px;
+    transition: top 0.5s ease-in-out;
+  }
+  &:hover .details-anim {
+    top: 0;
+    transition: top 0.5s ease-in-out;
   }
 
  }
