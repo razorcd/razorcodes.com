@@ -2,13 +2,6 @@
 @import "mixins/nav_but_text";
 @import "vars";
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .main-nav {
   @include menu_color;
   height: 70px;
