@@ -10,12 +10,12 @@ $section_bg_2: #d5d7dd;
   .window {
     float:left;
     width:100%;
-    height:100%;
+    min-height: 100%;
     // overflow: hidden;
   }
 
   .window:nth-child(1) {
-    height: calc(100% - 70px);
+    min-height: calc(100% - 70px);
     background: $section_bg_1;
     // top: 0%;
   }
@@ -40,7 +40,7 @@ $section_bg_2: #d5d7dd;
     // top: 500%;
   }
   .window:nth-child(7) {
-    height: calc(100% - 100px);
+    min-height: calc(100% - 100px);
     background: $section_bg_1;
     // top: 600%;
   }
