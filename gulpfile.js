@@ -49,7 +49,7 @@ gulp.task('build_index', ['build_css'], function () {
 
 
 gulp.task('move_other_files', ['clean'], function(){
-  return gulp.src(['app/+(fonts|images|javascripts)/**/*'])
+  return gulp.src(['app/+(fonts|images|javascripts|portfolio)/**/*'])
              .pipe(gulp.dest('dist'));
 })
 
