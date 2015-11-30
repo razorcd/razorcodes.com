@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="jquery.nouislider.min.css" rel="stylesheet" />
+    <script src="jquery.min_19.js"></script>
+    <script src="jquery.nouislider.min.js"> </script>
+    <script src="drawrec.js"></script>
+</head>
+
+<body>
+
+    <div id="mainDiv">
+        <canvas id="theCanvas" >
+            Browser does not support canvas!
+        </canvas>
+
+        <div id="menu">
+            <div id="header"> DRAWING RECORDER</div>
+            <div id="brushSize">
+                <label> Brush Size: </label>
+                <span id="brushSizeSpan">000</span> 
+                <div id="slider"></div>
+            </div>
+
+            <div id="colors">
+                <div></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="resetBut" class="button">NEW</div>
+            <div id="localSaveBut" class="button">SAVE LOCAL</div>
+            <div id="replayBut" class="button">REPLAY</div>
+        </div>
+    </div>
+    <p id="savesList">Saves:
+        
+
+    </p>
+
+</body>
+</html>
