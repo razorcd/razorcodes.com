@@ -3,12 +3,12 @@
 //   height: 550px;
 // }
 
-.featherlight-content iframe{
+.featherlight-content iframe {
   width: 522px;
   height: 522px;
-  display: block;
+  display: block !important; //needed so iframe has a size
 }
 
 .featherlight-iframe {
-  display: block;
+  // display: block;
 }
