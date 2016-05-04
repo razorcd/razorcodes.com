@@ -1,4 +1,4 @@
 node_modules
 dist
 .sass-cache
-app/portfolio/realtime/*
+app/portfolio/realtime-source/*
