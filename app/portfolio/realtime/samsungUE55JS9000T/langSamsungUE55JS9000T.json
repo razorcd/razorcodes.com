@@ -1,0 +1,41 @@
+﻿{
+  "comment" : [" 1. save .json with encoding utf-8  "],
+
+  "en": {
+        "frontButTag": "Show the front of the device<sup></sup>",
+        "sideButTag": "Show the side of the device<sup></sup>",
+        "backButTag": "Show the back of the device<sup></sup>",
+        "resetButTag" : "Reset<sup></sup>",
+		"standRemButTag" : "Remove the central stand<sup></sup>",
+		"standRepButTag" : "Replace the central stand<sup></sup>",
+		"onoffButTag" : "Show the power / navigation button<sup></sup>",
+		"onoffHideButTag" : "Hide the power / navigation button<sup></sup>",
+		"socketsButTag" : "Show the back sockets<sup></sup>",
+		"socketsHideButTag" : "Hide the back sockets<sup></sup>",
+		"imeiButTag" : "Show the serial code area<sup></sup>",
+		"imeiHideButTag" : "Hide the serial code area<sup></sup>",
+		"powerButTag" : "Show the power socket<sup></sup>",
+		"powerHideButTag" : "Hide the power socket<sup></sup>",
+    "oneConnectButTag" : "Show the One Connect socket<sup></sup>",
+    "oneConnectHideButTag" : "Hide the One Connect socket<sup></sup>",
+    "camButTag" : "Show the camera socket<sup></sup>",
+    "camHideButTag" : "Hide the camera socket<sup></sup>",
+
+    "sockets_1Tag" : "DIGITAL AUDIO OUT (OPTICAL)<sup></sup>",
+    "sockets_2Tag" : "USB 2.0 (5V 0.5A)<sup></sup>",
+    "sockets_3Tag" : "IR OUT<sup></sup>",
+    "sockets_4Tag" : "COMMON INTERFACE<sup></sup>",
+    "sockets_5Tag" : "ANT IN: SATELLITE SUB.<sup></sup>",
+    "sockets_6Tag" : "ANT IN: SATELLITE MAIN<sup></sup>",
+    "sockets_7Tag" : "ANT IN: AIR/CABLE<sup></sup>",
+    "sockets_8Tag" : "USB 3.0 (5V 1.0A)<sup></sup>",
+    "sockets_9Tag" : "HDMI IN 1 (STB)<sup></sup>",
+    "sockets_10Tag" : "HDMI IN 2 (DVI)<sup></sup>",
+    "sockets_11Tag" : "HDMI IN 3 (MHL)<sup></sup>",
+    "sockets_12Tag" : "HDMI IN 4 (ARC)<sup></sup>",
+    "sockets_13Tag" : "AUDIO OUT / AV IN   COMPONENT IN<sup></sup>",
+    "sockets_14Tag" : "EX-LINK<sup></sup>",
+    "sockets_15Tag" : "ONE CONNECT<sup></sup>",
+    "sockets_16Tag" : "LAN<sup></sup>"
+  }
+}

@@ -1,0 +1,38 @@
+﻿{
+  "comment" : [" 1. save .json with encoding utf-8  "],
+
+  "en": {
+        "frontButTag": "Show the front of the device<sup></sup>",
+        "sideButTag": "Show the side of the device<sup></sup>",
+        "backButTag": "Show the back of the device<sup></sup>",
+        "coverRemButTag": "Remove the back cover<sup></sup>",
+        "coverRepButTag": "Replace the back cover<sup></sup>",
+        "batRemButTag": "Remove the battery<sup></sup>",
+        "batRepButTag": "Replace the battery<sup></sup>",
+        "sdRemButTag": "Remove the memory card<sup></sup>",
+        "sdRepButTag": "Replace the memory card<sup></sup>",
+        "sim1RemButTag": "Remove the SIM card<sup></sup>",
+        "sim1RepButTag": "Replace the SIM card<sup></sup>",
+        "sim2RemButTag": "Remove the 2<sup>nd</sup> SIM card",
+        "sim2RepButTag": "Replace the 2<sup>nd</sup> SIM card",
+        "resetButTag" : "Reset<sup></sup>",
+        "liquidButTag" : "Show handset liquid damage indicator<sup></sup>",
+        "liquidHideButTag" : "Hide handset liquid damage indicator<sup></sup>",
+        "liquidBatButTag" : "Show battery liquid damage indicator<sup></sup>",
+        "liquidBatHideButTag" : "Hide battery liquid damage indicator<sup></sup>",
+        
+		"buttonsButTag" : "Show the buttons<sup></sup>",
+        "buttonsHideButTag" : "Hide the buttons<sup></sup>",
+        "portsButTag" : "Show the ports<sup></sup>",
+        "portsHideButTag" : "Hide the ports<sup></sup>",
+        "buttonsTagsText1" : "Power On / Off Button",
+        "buttonsTagsText2" : "Volume Up Button",
+        "buttonsTagsText3" : "Camera Button",
+        "buttonsTagsText4" : "Volume Down Button",
+        "portsTagsText1" : "Headphones Port",
+        "portsTagsText2" : "USB Port",
+        "liquidTagsText1" : "The handset liquid damage indicator.<br /><b>Red/Pink</b> indicates liquid damage.<br /><b>White</b> indicates no liquid damage.",
+        "liquidBatTagsText2" : "The battery liquid damage indicator.<br /><b>Red/Pink</b> indicates liquid damage.<br /><b>White</b> indicates no liquid damage."
+  }
+}
+ 

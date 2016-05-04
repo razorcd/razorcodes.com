@@ -1,0 +1,34 @@
+﻿{
+  "comment" : [" 1. save .json with encoding utf-8  "],
+
+  "en": {
+        "frontButTag": "Show the front of the device<sup></sup>",
+        "sideButTag": "Show the side of the device<sup></sup>",
+        "backButTag": "Show the back of the device<sup></sup>",
+        "resetButTag" : "Reset<sup></sup>",
+
+		"coverRemButTag" : "Remove the back cover<sup></sup>",
+		"coverRepButTag" : "Replace the back cover<sup></sup>",
+		"standRemButTag" : "Remove vertical stand foot<sup></sup>",
+		"standRepButTag" : "Replace vertical stand foot<sup></sup>",
+		"buttonButTag" : "Show the labels for buttons<sup></sup>",
+		"buttonHideButTag" : "Hide the labels for buttons<sup></sup>",
+		"socketsButTag" : "Show the back sockets<sup></sup>",
+		"socketsHideButTag" : "Hide the back sockets<sup></sup>",
+		"imeiButTag" : "Show the serial code area<sup></sup>",
+		"imeiHideButTag" : "Hide the serial code area<sup></sup>",
+
+		"sockets_spkTag" : "Speaker add<sup></sup>",
+		"sockets_wifiTag" : "WPS / WiFi setup<sup></sup>",
+		"sockets_serviceTag" : "Service (USB Port, for service only)<sup></sup>",
+		"sockets_ethernetTag" : "Ethernet<sup></sup>",
+		"sockets_powerTag" : "Power<sup></sup>",
+
+		"button_nfcTag" : "NFC Tag<sup></sup>",
+		"button_wifiTag" : "Internet Radio<sup></sup>",
+		"button_bluetoothTag" : "Bluetooth<sup></sup>",
+		"button_tvTag" : "TV Sound Connect<sup></sup>",
+		"button_volumeTag" : "Volume<sup></sup>",
+		"button_muteTag" : "Mute<sup></sup>"
+  }
+}

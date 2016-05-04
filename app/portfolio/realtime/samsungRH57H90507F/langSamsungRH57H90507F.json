@@ -1,0 +1,34 @@
+﻿{
+  "comment" : [" 1. save .json with encoding utf-8  "],
+
+  "en": {
+        "resetButTag": "Reset<sup></sup>",
+        "frontButTag": "Show the front of the device<sup></sup>",
+        "sideButTag": "Show the side of the device<sup></sup>",
+        "backButTag": "Show the back of the device<sup></sup>",
+
+        "freezerDoorOpenButTag": "Open freezer door<sup></sup>",
+        "freezerDoorCloseButTag": "Close freezer door<sup></sup>",
+        "freezerDrawersRemTag": "Remove the drawers<sup></sup>",
+        "freezerDrawersRepTag": "Replace the drawers<sup></sup>",
+        
+        "door1FridgeOpenTag": "Open ShowCase<sup></sup>",
+        "door1FridgeCloseTag": "Close ShowCase<sup></sup>",
+        "doorsFridgeOpenTag": "Open the InnerCase and ShowCase<sup></sup>",
+        "openInnerCaseTag": "Open InnerCase<sup></sup>",
+        "doorsFridgeCloseTag": "Close the InnerCase and ShowCase<sup></sup>",
+        "drawersFridgeRemTag": "Remove the drawers<sup></sup>",
+        "drawersFridgeRepTag": "Replace the drawers<sup></sup>",
+        
+        "serialShowTag" : "Show the serial code area<sup></sup>",
+        "serialHideTag" : "Hide the serial code area<sup></sup>",
+        "displayShowTag" : "Show the display<sup></sup>",
+        "displayHideTag" : "Hide the display<sup></sup>",
+        "waterShowTag" : "Show the water dispenser and ice maker<sup></sup>",
+        "waterHideTag" : "Hide the water dispenser and ice maker<sup></sup>",
+
+        "innerCaseTagsText1" : "InnerCase<sup></sup>",
+        "showCaseTagsText2" : "ShowCase<sup></sup>"
+  }
+}
+ 
