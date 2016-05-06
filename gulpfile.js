@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     st = require('st'),
     open = require('gulp-open');
     // sourcemaps = require('gulp-sourcemaps');
+var exec = require('child_process').exec;
 
 var streamErrorHandler = function(e){
   console.log(e);
@@ -49,7 +50,7 @@ gulp.task('build_index', ['build_css'], function () {
 
 
 gulp.task('move_other_files', ['clean'], function(){
-  return gulp.src(['app/+(fonts|images|javascripts|portfolio)/**/*', '!app/**/*-source/**', '!app/**/*-source'])
+  return gulp.src(['app/+(fonts|images|javascripts|portfolio)/**/*', 'app/favicon.ico', '!app/**/*-source/**', '!app/**/*-source'])
              .pipe(gulp.dest('dist'));
 })
 
@@ -75,6 +76,17 @@ gulp.task('open_uri', ['server'], function(){
   gulp.src(__filename)
   .pipe(open({uri: 'http://localhost:8080'}));
 });
+
+
+
+gulp.task('deploy', ['build'], function(done){
+  exec('scp -r dist/* razor@178.62.141.125:/var/www/razorcodes_com', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    // cb(err);
+  });
+
+})
 
 
 
