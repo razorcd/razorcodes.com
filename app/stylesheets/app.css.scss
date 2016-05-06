@@ -28,18 +28,20 @@ html, body, ul {
   font-family: 'OpenSans-Light';
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $h1_color;
+}
+
 h1 {
   font-weight: normal;
   margin: 20px 30px 10px 60px;
   font-size: 5em;
-  color: $h1_color;
 }
 
 h2 {
   font-weight: normal;
   margin: 20px 30px 10px 60px;
   font-size: 3em;
-  color: $h1_color;
 }
 
 .clear{
@@ -76,6 +78,22 @@ h2 {
     display:block;
   }
 
+  a {
+    color: #93A5D9;
+    text-decoration: none;
+    &:hover {
+      color: #BFD0FF;
+    }
+  }
+
+  .box-title {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+  }
+
   .img-desc {
     text-align: left;  //justify
     // text-decoration: none;
@@ -87,11 +105,19 @@ h2 {
     position: absolute;
     bottom: 0px;
   }
-
   .desc-anim {
     bottom: -60px;
     transition: bottom 0.5s ease-in-out;
   }
+
+
+  .img-desc-4 {
+    height: 100px;
+  }
+  .desc-anim-4 {
+    bottom: -100px;
+  }
+
 
   &:hover .desc-anim {
     bottom: 0;
