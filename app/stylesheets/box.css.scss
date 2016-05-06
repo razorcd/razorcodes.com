@@ -1,0 +1,86 @@
+.realtimeboxsize {height: 215px; }
+.3drendersboxsize {height: 215px; }
+.webappboxsize {height: 215px; }
+
+.box {
+  display: inline-block;
+  overflow: hidden;
+  margin: 15px;
+  position: relative;
+  font-weight: bold;
+  border: 1px solid #aaa;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+
+  img {
+    height: 100%;
+    display:block;
+  }
+
+  a {
+    color: #93A5D9;
+    text-decoration: none;
+    &:hover {
+      color: #BFD0FF;
+    }
+  }
+
+  .box-title {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+  }
+
+  .img-desc {
+    text-align: left;  //justify
+    // text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 8px 12px 26px 12px;
+    background-color: inherit;
+    position: absolute;
+    bottom: 0px;
+  }
+  .desc-anim {
+    bottom: -60px;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+
+  .img-desc-4 {
+    height: 100px;
+  }
+  .desc-anim-4 {
+    bottom: -100px;
+  }
+
+
+  &:hover .desc-anim {
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+  .details {
+    text-align: left;
+    position: absolute;
+    right:0;
+    top:0;
+    background-color: inherit;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .details-anim {
+    top: -60px;
+    transition: top 0.5s ease-in-out;
+  }
+  &:hover .details-anim {
+    top: 0;
+    transition: top 0.5s ease-in-out;
+  }
+
+ }
