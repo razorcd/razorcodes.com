@@ -394,7 +394,15 @@
     <h1>About me</h1>
     <p>
       <div class="descriptions descriptions-xl">
-        Passionate software developer with engineering degree in <em>Automatics and Computers</em> but also self-taught. Experienced with full stack web development using Rails and AngularJS on Linux platforms. Creative problem solver, able to propose viable solutions. Dedicated team member, persistent in learning and evolving with the team, writing well-structured code following design patterns and SOLID principles. Keen to pick up and use new languages, tools and emerging industry-standard libraries. Always interested in understanding the whole tech stack. I am comfortable working on complicated code-bases. <br/>
+        Hello,<br/>
+        <br/>
+        I am Cristian, a passionate full stack software developer and 3D artist from Berlin, Germany. I have an engineering degree in <em>Automatics and Computers</em> but I am also self-taught as i am constantly exploring new ideas and technologies. <br/>
+        <br/>
+        I am experienced with full stack web development mainly using Rails and AngularJS on Linux platforms.
+        I am able to provide software consultancy and development writing well-structured code that follows design patterns and SOLID principles.
+        I am a dedicated team member, persistent in learning and evolving with the team and keen to pick up and use new languages, tools and emerging libraries. I am always interested in understanding the whole tech stack and I am comfortable working on complicated code-bases. <br/>
+        <br/>
+        Feel free to <a id="em-obf-href2" href="">contact</a> me for more information.
       </div>
     </p>
     <br/>
@@ -440,10 +448,16 @@
   var emParts= ["com", "cris", "tian", "con", "tact", "raz", "orcodes"];
   var hrefParts= ["mai", "contact", "lto:"];
   var emText= emParts[1]+ emParts[2]+"@"+emParts[5]+emParts[6]+"."+emParts[0];
+
   var emElem= document.getElementById("em-obf");
-  var emHrefElem= document.getElementById("em-obf-href"); //changes only the href
   emElem.innerHTML= emText;
   emElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
+
+  var emHrefElem2= document.getElementById("em-obf-href2"); //changes only the href
+  emHrefElem2.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
+  emHrefElem2.setAttribute("title", emText);
+
+  var emHrefElem= document.getElementById("em-obf-href"); //changes only the href
   emHrefElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
   emHrefElem.setAttribute("title", emText);
 </script>
