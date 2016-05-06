@@ -18,14 +18,6 @@
     display:block;
   }
 
-  a {
-    color: #93A5D9;
-    text-decoration: none;
-    &:hover {
-      color: #BFD0FF;
-    }
-  }
-
   .box-title {
     display: table-cell;
     box-sizing: border-box;

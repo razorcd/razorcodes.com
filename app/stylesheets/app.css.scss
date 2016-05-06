@@ -44,6 +44,17 @@ h2 {
   font-size: 3em;
 }
 
+a {
+  color: $anchor_color_default;
+  text-decoration: none;
+  &:hover { color: $anchor_color_default_hover;}
+  &.light {
+    color: $anchor_color_light;
+    &:hover { color: $anchor_color_light_hover;}
+  }
+}
+
+
 .clear{
   clear:both;
 }
@@ -72,6 +83,7 @@ h2 {
 }
 
 .block { display: block; }
+.inline-block { display: inline-block; }
 .left { float: left; }
 .right { float: right; }
 .border-left { border-left: 1px solid $border_color_light}

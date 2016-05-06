@@ -24,7 +24,7 @@
     <li class="left border-right"> <a class="nav-but light" href="#about">About</a> </li>
     <li class="left border-right"> <a class="nav-but light" href="#contact">Contact</a> </li>
 
-    <div class="right border-left"> <a class="nav-but light" href="#email">Email</a></div>
+    <div class="right border-left"> <a class="nav-but light" id="em-obf-href" href="">&#064;</a></div>
     <div class="right border-left"> <a class="nav-but light" href="https://github.com/razorcd">GH</a></div>
     <div class="right border-left"> <a class="nav-but light" href="https://twitter.com/razordc">t</a></div>
   </ul>
@@ -74,8 +74,8 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           OSRA - part of the development team<br/>
           Ruby / Ruby on Rails<br/>
-          <a href="https://github.com/AgileVentures/osra" target="_blank">Source code</a> <br/>
-          <a href="https://youtu.be/BClR_As85bk" target="_blank">Presentation video</a> <br/>
+          <a class="light" href="https://github.com/AgileVentures/osra" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://youtu.be/BClR_As85bk" target="_blank">Presentation video</a> <br/>
         </div>
         <div class="details details-anim"> OSRA </div>
       </div>
@@ -87,7 +87,7 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           Personal portfolio of Marius Bota, a talented digital painter<br/>
           JavaScript / JQuery, JSON and a text scrollbar plugin<br/>
-          <a href="https://github.com/razorcd/marius-portfolio" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://github.com/razorcd/marius-portfolio" target="_blank">Source code</a> <br/>
         </div>
         <div class="details details-anim">Digital Painter Portfolio</div>
       </div>
@@ -113,7 +113,7 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           Personal project. Crawls over web pages following all urls recursively<br/>
           NodeJS - Express <br/>
-          <a href="https://github.com/razorcd/webCrawler" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://github.com/razorcd/webCrawler" target="_blank">Source code</a> <br/>
         </div>
         <div class="details details-anim"> Web Crawler </div>
       </div>
@@ -125,7 +125,7 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           Personal project of a miniblog with TDD.<br/>
           Ruby / Ruby on Rails<br/>
-          <a href="https://github.com/razorcd/share-your-thoughts" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://github.com/razorcd/share-your-thoughts" target="_blank">Source code</a> <br/>
         </div>
         <div class="details details-anim"> Share Your Thoughts </div>
       </div>
@@ -137,7 +137,7 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           Personal project. Records all drawing movements and replays them by animating each brushstroke in the same order. <br/>
           JavaScript / JQuery and a horizontal slider UI plugin.<br/>
-          <a href="https://github.com/razorcd/DrawingRecorder" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://github.com/razorcd/DrawingRecorder" target="_blank">Source code</a> <br/>
         </div>
         <div class="details details-anim"> Drawing Recorder </div>
       </div>
@@ -149,7 +149,7 @@
         <div class="img-desc img-desc-4 desc-anim desc-anim-4">
           Personal project.<br/>
           Vanilla JavaScript<br/>
-          <a href="https://github.com/razorcd/Mines-Game-in-vanillaJS" target="_blank">Source code</a> <br/>
+          <a class="light" href="https://github.com/razorcd/Mines-Game-in-vanillaJS" target="_blank">Source code</a> <br/>
         </div>
         <div class="details details-anim"> Mines </div>
       </div>
@@ -334,7 +334,7 @@
     <p>
       <div class="descriptions descriptions-xl">
         Software as a Service applications <br/>
-        Full Stack Single Page applications and APIs <br/>
+        Full stack web applications and APIs <br/>
         TDD and BDD: fully tested code from unit tests to complete end-to-end tests <br />
         3D Graphic renderings and 3D real-time web applications <br/>
         DevOps: setting up and maintaining web servers <br/>
@@ -387,10 +387,10 @@
     <h2>Recommended by</h2>
 
     <div class="descriptions descriptions-xl">
-      <a href="https://invisiblegirlfriend.com">Invisible Industries</a><br/>
-      <a href="http://www.lucidcx.com">LucidCX</a><br/>
-      <a href="https://www.greensmoke.com">GreenSmoke</a><br/>
-      <a href="http://www.humanmarketingmachine.com">Human Marketing Machine</a><br/>
+      <a href="https://invisiblegirlfriend.com" target="_blank">Invisible Industries</a><br/>
+      <a href="http://www.lucidcx.com" target="_blank">LucidCX</a><br/>
+      <a href="https://www.greensmoke.com" target="_blank">GreenSmoke</a><br/>
+      <a href="http://www.humanmarketingmachine.com" target="_blank">Human Marketing Machine</a><br/>
     </div>
   </section>
   <!-- about end -->
@@ -400,17 +400,13 @@
   <section id="contact" class="window" >
     <h1>Contact</h1>
     <div class="descriptions descriptions-l">
-      <h3>Email</h3>
-      <a href="/" target="_blank">cristian@</a>
+      <h3 class="inline-block">Email:</h3>&nbsp;&nbsp;&nbsp;<a id="em-obf" href="/">cristian</a>
       <br/>
-      <h3>Github</h3>
-      <a href="https://github.com/razorcd" target="_blank">razorcd</a>
+      <h3 class="inline-block">Github:</h3>&nbsp;&nbsp;&nbsp;<a href="https://github.com/razorcd" target="_blank">razorcd</a>
       <br/>
-      <h3>Twitter</h3>
-      <a href="https://twitter.com/razordc" target="_blank">@razorcd</a>
+      <h3 class="inline-block">Twitter:</h3>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/razordc" target="_blank">&#064;razorcd</a>
       <br/>
-      <h3>Skype</h3>
-      <div>razorcd</div>
+      <h3 class="inline-block">Skype:</h3>&nbsp;&nbsp;&nbsp;<a>razorcd</a>
       <br/>
     </div>
   </section>
@@ -424,6 +420,17 @@
   Copyright 2016 - All Rights Reserved
 </footer>
 
+<script type="text/javascript">
+  //replaces em
+  var emParts= ["com", "cris", "tian", "con", "tact", "raz", "orcodes"];
+  var hrefParts= ["mai", "contact", "lto:"];
+  var emText= emParts[1]+ emParts[2]+"@"+emParts[5]+emParts[6]+"."+emParts[0];
+  var emElem= document.getElementById("em-obf");
+  var emHrefElem= document.getElementById("em-obf-href"); //changes only the href
+  emElem.innerHTML= emText;
+  emElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
+  emHrefElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
+</script>
 
 </body>
 </html>
