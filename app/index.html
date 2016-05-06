@@ -5,6 +5,7 @@
   <title>Portfolio</title>
   <!-- inject:css -->
   <!-- endinject -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
   <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="javascripts/featherlight.min.js"></script>
@@ -24,9 +25,23 @@
     <li class="left border-right"> <a class="nav-but light" href="#about">About</a> </li>
     <li class="left border-right"> <a class="nav-but light" href="#contact">Contact</a> </li>
 
-    <div class="right border-left"> <a class="nav-but light" id="em-obf-href" href="">&#064;</a></div>
-    <div class="right border-left"> <a class="nav-but light" href="https://github.com/razorcd">GH</a></div>
-    <div class="right border-left"> <a class="nav-but light" href="https://twitter.com/razordc">t</a></div>
+
+
+    <div class="right border-left">
+      <a class="nav-but light large symbol" id="em-obf-href" href="">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="right border-left">
+      <a class="nav-but light large symbol" href="https://github.com/razorcd" target="_blank" title="github">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="right border-left">
+      <a class="nav-but light large symbol" href="https://twitter.com/razordc" target="_blank" title="twitter">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+    </div>
   </ul>
 </nav>
 <!-- navbar end-->
@@ -430,6 +445,7 @@
   emElem.innerHTML= emText;
   emElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
   emHrefElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
+  emHrefElem.setAttribute("title", emText);
 </script>
 
 </body>

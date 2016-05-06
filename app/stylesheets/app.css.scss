@@ -11,6 +11,7 @@
   font-style: normal;
 }
 
+
 html {
   box-sizing: border-box;
 }
@@ -53,7 +54,6 @@ a {
     &:hover { color: $anchor_color_light_hover;}
   }
 }
-
 
 .clear{
   clear:both;
