@@ -7,3 +7,6 @@ LIVE: www.razorcodes.com
 * add a jump to top button or make top navbar fixed
 * find OSRA testing credentials
 * check that the Web Crawler is still working
+
+
+COPYRIGHT 2002 - 2016 All rights reserved. Property of Cristian Dugacicu. Not for public or private distribution
