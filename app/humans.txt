@@ -1,0 +1,18 @@
+/* TEAM */
+                            
+Software Developer: Cristian Dugacicu
+
+Github: https://github.com/razorcd
+Twitter: @razorcd
+
+Location: Berlin, Germany.
+
+/* SITE */
+
+Last update: 2016/05/07
+
+Standards: HTML5, CSS3 (SASS), JS
+
+Components: jQuery
+
+Software: Software used for personal portfolio
