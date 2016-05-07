@@ -1,1 +1,9 @@
-www.razorcodes.com
+## Personal portfolio
+
+LIVE: www.razorcodes.com
+
+##TODO: 
+* fix `deploy_source` gulp task to deploy everything except `dist/portfolio/`
+* add a jump to top button or make top navbar fixed
+* find OSRA testing credentials
+* check that the Web Crawler is still working
