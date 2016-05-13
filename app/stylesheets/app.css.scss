@@ -55,6 +55,11 @@ a {
   }
 }
 
+.icon {
+  color: $anchor_color_default;
+  fill: $anchor_color_default;
+}
+
 .vertical-middle {
   position: absolute;
   top: 50%;
