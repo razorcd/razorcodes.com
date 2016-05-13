@@ -3,9 +3,8 @@
 LIVE: www.razorcodes.com
 
 ##TODO: 
-* box animated parts should always show on mobile devices
+* box animated parts should always show on mobile devices (fix with CSS only)
 * add a jump to top button or make top navbar fixed
-* check that the Web Crawler is still working well
 * fix `deploy_source` gulp task to deploy everything except `dist/portfolio/`
 
 
