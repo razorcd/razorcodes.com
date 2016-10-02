@@ -107,6 +107,6 @@ gulp.task('deploy_full', ['build'], function(done){
 
 
 gulp.task("build", ['clean', 'build_css', 'build_index', 'move_other_files']);
-gulp.task("serv", ['build', 'watch', 'server', 'open_uri']);
+gulp.task("serve", ['build', 'watch', 'server', 'open_uri']);
 
-gulp.task('default', ['serv']);
+gulp.task('default', ['serve']);
