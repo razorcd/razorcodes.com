@@ -87,23 +87,6 @@ gulp.task('deploy_full', ['build'], function(done){
   });
 })
 
-// gulp.task('deploy_source', ['build'], function(done){
-//   exec('scp dist/* razor@178.62.141.125:/var/www/razorcodes_com', function (err, stdout, stderr) {
-//     console.log(stdout);
-//     console.log(stderr);
-//     // cb(err);
-//   });
-//   exec("find ./dist -type d ! -wholename './dist/portfolio/*' \
-//         ! -wholename './dist/portfolio' \
-//         ! -wholename './dist' \
-//         | xargs scp -r - razor@178.62.141.125:/var/www/razorcodes_com",
-//          function (err, stdout, stderr) {
-//     console.log(stdout);
-//     console.log(stderr);
-//     // cb(err);
-//   });
-// })
-
 
 
 gulp.task("build", ['clean', 'build_css', 'build_index', 'move_other_files']);
