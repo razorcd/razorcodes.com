@@ -503,6 +503,11 @@
   Copyright 2002 - 2018. All Rights Reserved.
 </footer>
 
+
+<!-- back-home-button -->
+<a href="#" id="back-home-button" class="back-home-button-position arrow-up"></a>
+
+<!-- mangle mail -->
 <script type="text/javascript">
   //replaces em
   var emParts= ["com", "cris", "tian", "con", "tact", "raz", "orcodes"];
@@ -520,6 +525,31 @@
   var emHrefElem= document.getElementById("em-obf-href"); //changes only the href
   emHrefElem.setAttribute("href", hrefParts[0]+hrefParts[2]+emText);
   emHrefElem.setAttribute("title", emText);
+</script>
+
+<!-- back-home-button scroll event -->
+<script type="text/javascript">
+  var backHomeButton = document.getElementById("back-home-button");
+  var buttonVisible = false;
+
+  window.addEventListener('scroll', function(e) {
+    window.requestAnimationFrame(function() {   // synchronises with default framerate
+      if (window.scrollY > 100) {
+        if (!buttonVisible) {    // touches DOM only if change is needed
+          backHomeButton.style.display = 'block';
+          buttonVisible = true;
+          console.log("Changing to true")
+        }
+      } else {
+        if (buttonVisible) {   // touches DOM only if change is needed
+          backHomeButton.style.display = 'none'
+          buttonVisible = false;
+          console.log("Changing to false")
+        }
+      }
+    });
+  }
+);
 </script>
 
 <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>

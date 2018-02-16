@@ -1,0 +1,19 @@
+@import "vars";
+
+.back-home-button-position {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: none;
+}
+
+$arrow-size: 50px;
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    
+    border-bottom: $arrow-size solid $text_color_dark;
+    opacity: 0.8;
+  }
