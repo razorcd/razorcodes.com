@@ -1,6 +1,6 @@
-.realtimeboxsize {height: 215px; }
-.3drendersboxsize {height: 215px; }
-.webappboxsize {height: 215px; }
+.realtimeboxsize { height: 215px; }
+.3drendersboxsize { height: 215px; }
+.webappboxsize { height: 215px; }
 
 .box {
   display: inline-block;
@@ -24,7 +24,7 @@
     width: 400px;
     height: 200px;
     background-color: #ffffff;
-    h1, h2,, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
       margin: 20px auto;
     }
   }
@@ -45,16 +45,23 @@
     transition: bottom 0.5s ease-in-out;
   }
 
+  .img-desc-3 {
+    height: 80px;
+  }
+  .desc-anim-3 {
+    bottom: -80px;
+  }
 
   .img-desc-4 {
-    height: 110px;
+    height: 100px;
   }
   .desc-anim-4 {
-    bottom: -110px;
+    bottom: -100px;
   }
 
 
-  &:hover .desc-anim {
+  // &:hover .desc-anim {  // enable animation on hover
+  & .desc-anim {
     bottom: 0;
     transition: bottom 0.5s ease-in-out;
   }
@@ -73,7 +80,8 @@
     top: -60px;
     transition: top 0.5s ease-in-out;
   }
-  &:hover .details-anim {
+  // &:hover .details-anim {    // enable animation on hover
+  & .details-anim {
     top: 0;
     transition: top 0.5s ease-in-out;
   }

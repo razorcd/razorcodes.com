@@ -17,7 +17,7 @@
     @include but_text;
     display: block;
     height: 70px;               /* total height: 70px */
-    padding: 25px 30px;
+    padding: 15px 30px;
     // &.symbol {padding-top: 23px;}
 
     &:hover { cursor: pointer; }
@@ -26,7 +26,57 @@
     &.large { font-size: 1.2em;}
   }
 
+  .icon-highlight {
+    fill: $icon-highlight-color;
+  }
 
+  .flicker-animation {
+    @keyframes flickerAnimation {
+      0%   { opacity:1; }
+      30%  { opacity:1; }
+      35%  { opacity:0; }
+      60%  { opacity:0; }
+      65%  { opacity:1; }
+      100% { opacity:1; } 
+    }
+    @-o-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      30%  { opacity:1; }
+      35%  { opacity:0; }
+      60%  { opacity:0; }
+      65%  { opacity:1; }
+      100% { opacity:1; } 
+    }
+    @-moz-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      30%  { opacity:1; }
+      35%  { opacity:0; }
+      60%  { opacity:0; }
+      65%  { opacity:1; }
+      100% { opacity:1; } 
+    }
+    @-webkit-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      30%  { opacity:1; }
+      35%  { opacity:0; }
+      60%  { opacity:0; }
+      65%  { opacity:1; }
+      100% { opacity:1; } 
+    }
+    & {
+      -webkit-animation: flickerAnimation 1.5s infinite;
+      -moz-animation: flickerAnimation 1.5s infinite;
+      -o-animation: flickerAnimation 1.5s infinite;
+        animation: flickerAnimation 1.5s infinite;
+    }
+  }
+
+  .tune-pipe-position {
+    position: relative;
+    top: -6px;
+    left: -2px;
+    font-size: 0.8em;
+  }
 }/*.main-nav*/
 
 
