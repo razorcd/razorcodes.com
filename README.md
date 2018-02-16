@@ -9,14 +9,11 @@ LIVE: www.razorcodes.com
 * run `gulp open_uri` to start a local server and serve distribution package
 
 ## Deployment
-* run `docker build --no-cache -t razorcodes .` build docker image. Requires local `dist` folder.
+* run `docker build --no-cache -t razorcd/razorcodes .` build docker image. Requires local `dist` folder. Images must be tagged with Dockerhub ID to be pushed.
 * run `docker run -p 8080:80 --name razorcodes razorcodes` to start container then visit `localhost:8080`
 
 
 ## TODO 
-
-* box animated parts should always show on mobile devices (fix with CSS only)
-* add a jump to top button or make top navbar fixed
 * fix `deploy_source` gulp task to deploy everything except `dist/portfolio/`
 
 
